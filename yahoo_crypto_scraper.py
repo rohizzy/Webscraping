@@ -124,6 +124,6 @@ def main():
 
 print(main())
 df = pd.DataFrame(list(chain.from_iterable(main())))
-# print(df)
+print(df)
 today = datetime.date.today()
 df.to_csv(f'Yahoo_crypto_scraped_{today}.csv', index=False, encoding='utf-8')
